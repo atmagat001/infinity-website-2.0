@@ -218,12 +218,18 @@ footer {
     }
 
     .header-container {
-        flex-wrap: wrap;
+        flex-flow: column;
         height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     nav {
         display: flex;
+    }
+
+    nav a {
+        text-align: center;
     }
 
     header h2 {
@@ -253,9 +259,25 @@ footer {
        
     }
 
-    .banner h2, p, .input-container {
-        width: 90vw;
+    .input-container  {
+        display: flex;
+        flex-flow: column;
+        
     }
+
+    .input-container input {
+        border: none;
+        flex-basis: 100%;
+        padding: 10px 0;
+        text-align: center;
+
+    }
+
+    .input-container button {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
 
     .banner h2 {
         width: 90vw;
@@ -279,6 +301,7 @@ footer {
     .footer {
         padding: 0;
         width: 95vw;
+        margin-top: 10px;
     }
 
     .footer h3 {
